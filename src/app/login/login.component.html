@@ -1,0 +1,18 @@
+<h2 style="color: rgb(33, 8, 143); text-align: left">Login</h2>
+
+<form>
+  <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Username or Email Address" name="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+   <div><span class="reg">Don't have account yet? <a [routerLink]="['/registration']"> Register Here</a></span></div> 
+    <div><span class="psw">Forgot Password?<a [routerLink]="['/login']"> Reset Here</a></span></div>
+  </div>
+</form>
